@@ -51,6 +51,7 @@ DICT_FILENAME = 'words.txt'
 ALPHABET = [chr(i+97) for i in range(26)]
 del i
 
+#https://en.wikibooks.org/wiki/Algorithm_Implementation/Strings/Levenshtein_distance
 def levenshtein(s1, s2):
 		if len(s1) < len(s2):
 				return levenshtein(s2, s1)
